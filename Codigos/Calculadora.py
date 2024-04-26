@@ -33,8 +33,15 @@ def verifcar_n(p):
     else:
         print('isso nao é um numero adcionar um reset no codigo depois')
         
+def simple():
+    rendimento = inv * juros * tempo
+    print(f'{inv}apos {tempo} meses rendendo a uma taxa de {juros} seu rendimento foi de {rendimento}')
+    rendimento += inv
+    print(f'somando um total de {rendimento}')
+
+def composto():
     
-#area do codigo
+    
 
 #investimento inicial
 
@@ -95,29 +102,15 @@ elif taxa == 'M':
 else:
     print('isso nn e um numero, adcionar o reset no codigo')
 
-#escolhendo formula
-
-if calc == True:
-    simple()
-else:
-    composto()
-    
-
-
-
 #corrigindo as varivaeis
 
 inv = int(inv)
 tempo = int(tempo)
 juros = juros / 100
 
+#escolhendo formula
 
-#calculo simples
-
-rendimento = inv * juros * tempo
-print(f'{inv}apos {tempo} meses rendendo a uma taxa de {juros} seu rendimento foi de {rendimento}')
-rendimento += inv
-print(f'somando um total de {rendimento}')
-
-
-#calculo composto
+if calc == True:
+    simple()
+else:
+    composto()
