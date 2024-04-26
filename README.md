@@ -1,4 +1,4 @@
-# Calculadora de investimentos :computer: :star:
+# Calculadora_de_investimentos :computer: :star:
 
 :star: Esse é um projeto meu, de um calculadora para te ajudar a calcular seus investimentos. :star:
 
@@ -10,10 +10,10 @@ Já o outro ele calcula o juros de um valor inicial por um determinado tempo com
 
 :black_nib: :black_nib:
 
-*Obs: na vida real os valores podem dar uma mudada com os valores da calcukadora, pois a minha calculadora não faz correção dos valores e nem desconta as taxas.* :memo:
+*Obs: na vida real os valores podem dar uma mudada com os valores da calcukadora, pois a minha calculadora não faz correção dos valores e nem desconta as taxas* :memo:
 
 _Futuramente quero adcionar essas features na calculadora._
 
- :mega: __*Experimente a calculadora*__ 
+:mega: __*Experimente a calculadora*__ 
 
 :exclamation: :exclamation: :exclamation:
