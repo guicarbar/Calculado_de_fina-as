@@ -1,7 +1,6 @@
-#area de imports
+#calculadora de investimento
 
 #area de funçoes
-
 
 def verificar_v(n):
     atualizado = ''
