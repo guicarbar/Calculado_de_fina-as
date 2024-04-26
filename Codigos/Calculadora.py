@@ -34,14 +34,23 @@ def verifcar_n(p):
         print('isso nao é um numero adcionar um reset no codigo depois')
         
 def simple():
-    rendimento = inv * juros * tempo
-    print(f'{inv}apos {tempo} meses rendendo a uma taxa de {juros} seu rendimento foi de {rendimento}')
-    rendimento += inv
-    print(f'somando um total de {rendimento}')
+    rendimento = inv * (1 + juros) ** tempo
+    print(rendimento)
+
+def fapli(h):
+    for g in range(0, tempo):
+        rendimento = inv + h * (1 + juros) ** 1
+        g += 1
+        return rendimento
+
 
 def composto():
-    
-    
+    print('quanto deseja aplicar por mes a mais no seu investimento ?')
+    apli = input()
+    apli = verificar_v(apli)
+    verifcar_n(apli)
+    montante = fapli(apli)
+    print(f'seu montante é {montante}')
 
 #investimento inicial
 
@@ -71,7 +80,7 @@ else:
 #juros simples ou composto
 
 print('vc gostaria de adcionar mensalmente um valor no seu investimento ? S ou N')
-y = str(input()).upper()
+y = str(input())
 
 if y == 'S':
     calc = True
@@ -111,6 +120,6 @@ juros = juros / 100
 #escolhendo formula
 
 if calc == True:
-    simple()
-else:
     composto()
+else:
+    simple()
