@@ -33,32 +33,30 @@ def verifcar_n(p):
     else:
         print('isso nao é um numero adcionar um reset no codigo depois')
         
-def simple():
+def simple(inv, juros, tempo):
     rendimento = inv * (1 + juros) ** tempo
-    print(rendimento)
+    print(f'{rendimento:.2f}')
 
-def fapli(h):
-    for g in range(0, tempo):
-        rendimento = inv + h * (1 + juros) ** 1
-        g += 1
-        return rendimento
-
-
-def composto():
-    print('quanto deseja aplicar por mes a mais no seu investimento ?')
+def composto(inv, juros, tempo):
+    print('Quanto deseja aplicar por mês a mais no seu investimento?')
     apli = input()
     apli = verificar_v(apli)
     verifcar_n(apli)
-    montante = fapli(apli)
-    print(f'seu montante é {montante}')
+    apli = float(apli)
+    montante = inv
+    for g in range(0, tempo):
+        montante += apli
+        montante *= (1 + juros)
+    print(f"O montante ao final do período é: {montante:.2f}")
+
 
 #investimento inicial
 
 print('qual seu investimento inicial ?')
 inv = input()
-
 inv = verificar_v(inv)
 verifcar_n(inv)
+inv = float(inv)
 
 #quanto tempo
 
@@ -80,7 +78,7 @@ else:
 #juros simples ou composto
 
 print('vc gostaria de adcionar mensalmente um valor no seu investimento ? S ou N')
-y = str(input())
+y = input().upper()
 
 if y == 'S':
     calc = True
@@ -100,26 +98,25 @@ if taxa == 'A':
     jurosx = input()
     jurosx = verificar_v(jurosx)
     verifcar_n(jurosx)
-    jurosx = int(jurosx)
-    juros = jurosx / 12
+    juros = float(jurosx) / 12
 elif taxa == 'M':
     print('qual a taxa de juros ao mes ?')
     jurosx = input()
     jurosx = verificar_v(jurosx)
     verifcar_n(jurosx)
-    juros = int(jurosx)
+    juros = float(jurosx)
 else:
     print('isso nn e um numero, adcionar o reset no codigo')
 
 #corrigindo as varivaeis
 
-inv = int(inv)
 tempo = int(tempo)
-juros = juros / 100
+juros /= 100
 
 #escolhendo formula
 
-if calc == True:
-    composto()
+if calc:
+    composto(inv, juros, tempo)
 else:
-    simple()
+    simple(inv, juros, tempo)
+    
