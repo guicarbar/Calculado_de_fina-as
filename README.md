@@ -1,3 +1,5 @@
+🟢 🟡 🔴
+
 # Calculadora_de_investimentos :computer: :star:
 
 :star: Esse é um projeto meu, de um calculadora para te ajudar a calcular seus investimentos. :star:
