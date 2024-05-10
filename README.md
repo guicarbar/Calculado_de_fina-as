@@ -4,6 +4,9 @@
 
 :star: Esse é um projeto meu, de um calculadora para te ajudar a calcular seus investimentos. :star:
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white)
+
 :black_nib: :black_nib:
 
 Ela funciona com perguntas, ela ira te perguntar tudo que for necessrio para fazer os calculos.
